@@ -14,12 +14,14 @@ Citizen.CreateThread(function()
       if GetDistanceBetweenCoords(mycords, locations, true) < Config.distance then
        DrawText3Ds(locations.x, locations.y, locations.z, Config.text) 
        if IsControlJustReleased(0,38) then
-
+       
+       FreezeEntityPosition(playerPed, true)
 	TaskStartScenarioInPlace(playerPed, 'WORLD_HUMAN_WELDING', 0, true)
 	Citizen.Wait(10000)
 
 	ClearPedTasksImmediately(playerPed)
        TriggerServerEvent('lootmoney')
+       FreezeEntityPosition(playerPed, false)
 	Citizen.Wait(Config.cooldown)
 end
 end
@@ -40,11 +42,13 @@ Citizen.CreateThread(function()
        DrawText3Ds(locations.x, locations.y, locations.z, Config.text) 
        if IsControlJustReleased(0,38) then
 
+       FreezeEntityPosition(playerPed, true)
 	TaskStartScenarioInPlace(playerPed, 'WORLD_HUMAN_WELDING', 0, true)
 	Citizen.Wait(10000)
 
 	ClearPedTasksImmediately(playerPed)
        TriggerServerEvent('lootcoral')
+       FreezeEntityPosition(playerPed, false)
 	Citizen.Wait(Config.cooldown)
 end
 end
@@ -65,11 +69,13 @@ Citizen.CreateThread(function()
        DrawText3Ds(locations.x, locations.y, locations.z, Config.text) 
        if IsControlJustReleased(0,38) then
 
+       FreezeEntityPosition(playerPed, true)
 	TaskStartScenarioInPlace(playerPed, 'WORLD_HUMAN_WELDING', 0, true)
 	Citizen.Wait(10000)
 
 	ClearPedTasksImmediately(playerPed)
        TriggerServerEvent('lootcoral')
+       FreezeEntityPosition(playerPed, false)
 	Citizen.Wait(Config.cooldown)
 end
 end
@@ -90,11 +96,13 @@ Citizen.CreateThread(function()
        DrawText3Ds(locations.x, locations.y, locations.z, Config.text) 
        if IsControlJustReleased(0,38) then
 
+       FreezeEntityPosition(playerPed, true)
 	TaskStartScenarioInPlace(playerPed, 'WORLD_HUMAN_WELDING', 0, true)
 	Citizen.Wait(10000)
 
 	ClearPedTasksImmediately(playerPed)
        TriggerServerEvent('lootgold')
+       FreezeEntityPosition(playerPed, false)
 	Citizen.Wait(Config.cooldown)
 end
 end
@@ -115,11 +123,13 @@ Citizen.CreateThread(function()
        DrawText3Ds(locations.x, locations.y, locations.z, Config.text) 
        if IsControlJustReleased(0,38) then
 
+       FreezeEntityPosition(playerPed, true)
 	TaskStartScenarioInPlace(playerPed, 'WORLD_HUMAN_WELDING', 0, true)
 	Citizen.Wait(10000)
 
 	ClearPedTasksImmediately(playerPed)
        TriggerServerEvent('lootsilver')
+       FreezeEntityPosition(playerPed, false)
 	Citizen.Wait(Config.cooldown)
 end
 end
@@ -140,11 +150,13 @@ Citizen.CreateThread(function()
        DrawText3Ds(locations.x, locations.y, locations.z, Config.text) 
        if IsControlJustReleased(0,38) then
 
+       FreezeEntityPosition(playerPed, true)
 	TaskStartScenarioInPlace(playerPed, 'WORLD_HUMAN_WELDING', 0, true)
 	Citizen.Wait(10000)
 
 	ClearPedTasksImmediately(playerPed)
        TriggerServerEvent('lootcoral')
+       FreezeEntityPosition(playerPed, false)
 	Citizen.Wait(Config.cooldown)
 end
 end
@@ -165,11 +177,13 @@ Citizen.CreateThread(function()
        DrawText3Ds(locations.x, locations.y, locations.z, Config.text) 
        if IsControlJustReleased(0,38) then
 
+       FreezeEntityPosition(playerPed, true)
 	TaskStartScenarioInPlace(playerPed, 'WORLD_HUMAN_WELDING', 0, true)
 	Citizen.Wait(10000)
 
 	ClearPedTasksImmediately(playerPed)
        TriggerServerEvent('lootsilver')
+       FreezeEntityPosition(playerPed, false)
 	Citizen.Wait(Config.cooldown)
 end
 end
@@ -190,11 +204,13 @@ Citizen.CreateThread(function()
        DrawText3Ds(locations.x, locations.y, locations.z, Config.text) 
        if IsControlJustReleased(0,38) then
 
+       FreezeEntityPosition(playerPed, true)
 	TaskStartScenarioInPlace(playerPed, 'WORLD_HUMAN_WELDING', 0, true)
 	Citizen.Wait(10000)
 
 	ClearPedTasksImmediately(playerPed)
        TriggerServerEvent('lootmoney')
+       FreezeEntityPosition(playerPed, false)
 	Citizen.Wait(Config.cooldown)
 end
 end
@@ -215,11 +231,13 @@ Citizen.CreateThread(function()
        DrawText3Ds(locations.x, locations.y, locations.z, Config.text) 
        if IsControlJustReleased(0,38) then
 
+       FreezeEntityPosition(playerPed, true)
 	TaskStartScenarioInPlace(playerPed, 'WORLD_HUMAN_WELDING', 0, true)
 	Citizen.Wait(10000)
 
 	ClearPedTasksImmediately(playerPed)
        TriggerServerEvent('lootchest')
+       FreezeEntityPosition(playerPed, false)
 	Citizen.Wait(Config.cooldown)
 end
 end
@@ -240,11 +258,13 @@ Citizen.CreateThread(function()
        DrawText3Ds(locations.x, locations.y, locations.z, Config.text) 
        if IsControlJustReleased(0,38) then
 
+       FreezeEntityPosition(playerPed, true)
 	TaskStartScenarioInPlace(playerPed, 'WORLD_HUMAN_WELDING', 0, true)
 	Citizen.Wait(10000)
 
 	ClearPedTasksImmediately(playerPed)
        TriggerServerEvent('lootchest')
+       FreezeEntityPosition(playerPed, false)
 	Citizen.Wait(Config.cooldown)
 end
 end
