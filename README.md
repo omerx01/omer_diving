@@ -10,4 +10,4 @@ Hammer (item: hammer )
 
 
 
-Discord link: https://discord.gg/7gnegwJrgB
+Discord link: https://discord.gg/vupUVWpTFg
